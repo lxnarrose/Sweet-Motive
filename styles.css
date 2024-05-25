@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Elsie&family=Mali&family=Sue+Ellen+Francisco&display=swap');
+
+body {
+    font-family: 'Mali', sans-serif;
+    background-color: #ffe6f0; /* light pink background */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff0f5; /* lavender blush background */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    border: 3px solid #ffb6c1; /* light pink border */
+    max-width: 600px;
+    width: 80%;
+    animation: fadeIn 2s ease-in-out;
+}
+
+h1 {
+    font-family: 'Elsie', cursive;
+    color: #ff69b4; /* hot pink */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+h2 {
+    font-family: 'Elsie', cursive;
+    color: #ff69b4; /* hot pink */
+    font-size: 1em;
+    margin-bottom: 20px;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+#affirmation {
+    font-family: 'Sue Ellen Francisco', cursive;
+    font-size: 1.8em;
+    color: #ff1493; /* deep pink */
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #fffafa; /* snow white background */
+    border-radius: 10px;
+    border: 2px dashed #ffb6c1; /* light pink dashed border */
+    animation: fadeIn 2s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+
+button {
+    font-family: 'Mali', sans-serif;
+    background-color: #ffb6c1; /* light pink */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+button:hover {
+    background-color: #ff69b4; /* hot pink on hover */
+}
+
+footer {
+    margin-top: 20px;
+    font-family: 'Mali', sans-serif;
+    color: #ff69b4; /* hot pink */
+    animation: fadeIn 3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.hidden {
+    opacity: 0;
+}
+
+
